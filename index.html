@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Marvel Avengers</h1>
+        <p id="description" class="description text-center">
+          Which Avenger are you?
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Tony Stark"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="tony@gmail.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age:</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="9"
+            max="88"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which character best suits you?</p>
+          <select id="dropdown" name="character" class="form-control" required>
+            <option disabled selected value>Select your character</option>
+            <option value="joker">Iron Man</option>
+            <option value="leader">Captain America</option>
+            <option value="thunder">Thor</option>
+            <option value="bulky">Hulk</option>
+            <option value="assasin">Black Widow</option>
+            <option value="sharpshooter">Hawkeye</option>
+            <option value="covered">Nick Fury</option>
+            <option value="wakanda">Black Panther</option>
+            <option value="witch">Doctor Strange</option>
+            <option value="strongest">Wanda</option>
+            <option value="spidey">Spider Man</option>
+            <option value="purple">Thanos</option>
+            <option value="tinyBig">Ant Man</option>
+            <option value="sting">Wasp</option>
+            <option value="machine">War Machine</option>
+            <option value="soldier">Winter Soldier</option>
+            <option value="wings">Falcon</option>
+            <option value="see">Vision</option>
+            <option value="trickster">Loki</option>
+            <option value="jarvis">Ultron</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What infinity stone would you choose</p>
+          <select id="most-like" name="favorite" class="form-control" required>
+            <option disabled selected value>Choose your infinity stone</option>
+            <option value="space">Space Stone</option>
+            <option value="reality">Reality Stone</option>
+            <option value="time">Time Stone</option>
+            <option value="power">Power Stone</option>
+            <option value="mind">Mind Stone</option>
+          <option value="soul">Soul Stone</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you think there should be another avengers movie?</p>
+          <label>
+            <input
+              name="user-thought"
+              value="agree"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-thought"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label>
+
+          <label
+            ><input
+              name="user-thought"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What movie is your favorite? 
+            (Select all that apply)
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="captain-america"
+              type="checkbox"
+              class="input-checkbox"
+            />Captain America: The First Avenger</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="captain-marvel"
+              type="checkbox"
+              class="input-checkbox"
+            />Captain Marvel</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="iron-man"
+              type="checkbox"
+              class="input-checkbox"
+            />Iron Man (2-3)</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="incredible-hulk"
+              type="checkbox"
+              class="input-checkbox"
+            />The Incredible Hulk</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="god-of-thunder"
+              type="checkbox"
+              class="input-checkbox"
+            />Thor</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="the-avengers"
+              type="checkbox"
+              class="input-checkbox"
+            />The Avengers</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="avengers-age-of-ultron"
+              type="checkbox"
+              class="input-checkbox"
+            />Avengers Age of Ultron</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="ant-man"
+              type="checkbox"
+              class="input-checkbox"
+            />Ant Man</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="spiderman"
+              type="checkbox"
+              class="input-checkbox"
+            />Spider Man</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="black-panther"
+              type="checkbox"
+              class="input-checkbox"
+            />Black Panther</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="doctor-strange"
+              type="checkbox"
+              class="input-checkbox"
+            />Doctor Strange</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="infinity-stones"
+              type="checkbox"
+              class="input-checkbox"
+            />Avengers:Infinity Stones</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="endgame"
+              type="checkbox"
+              class="input-checkbox"
+            />Avengers Endgame</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="other-movie"
+              type="checkbox"
+              class="input-checkbox"
+            />Others</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>If you were given the chance to have all 6 infinity stones. What will you do?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="explain"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
